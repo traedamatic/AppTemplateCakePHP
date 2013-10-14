@@ -1,0 +1,11 @@
+tmp
+tmp/
+
+node_modules
+node_modules/
+
+webroot/index.php
+Config/database.php
+
+webroot/files
+webroot/files/*
