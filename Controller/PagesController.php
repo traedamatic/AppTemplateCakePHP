@@ -39,10 +39,20 @@ class PagesController extends AppController {
 	}	
 
 	/**
+	 * default index page
+	 * @return [type] [description]
+	 */
+	public function index()
+	{
+		//render index		
+	}
+
+	/**
 	 * manager dashboard
 	 */
 	public function manager_dashboard() {
 		$this->layout = 'manager';
 
 	}
+
 }

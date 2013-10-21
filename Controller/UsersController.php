@@ -58,7 +58,7 @@ class UsersController extends AppController {
 			if ($this->Auth->login()) {
 				return $this->redirect($this->Auth->redirect());
 			} else {
-				$this->Session->setFlash(__('Dieser Benutzername existiert nicht oder das Passwort ist falsch.'), 'default', array(), 'auth');
+				$this->Session->setFlash(__('You username does not exists or your password is wrong!'), 'default', array(), 'auth');
 			}
 		}
 		

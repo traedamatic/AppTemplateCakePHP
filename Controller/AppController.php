@@ -51,7 +51,7 @@ class AppController extends Controller {
 
 		$this->Auth->authenticate = array('Form');
 
-		$this->Auth->authError = "Leider dürfen Sie nicht auf diese Seite zugreifen!";
+		$this->Auth->authError = "You are not allowed to access this page!";
 
 		$this->Auth->loginAction = array('controller' => 'users', 'action' => 'login', 'manager' => false,'plugin' => false);
 		$this->Auth->logoutRedirect = array('controller' => 'projects', 'action' => 'index', 'manager' => false,'plugin' => false);
